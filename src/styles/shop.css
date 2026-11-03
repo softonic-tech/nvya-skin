@@ -1,0 +1,19 @@
+.ny-price{font:500 14px/1.2 'DM Sans',sans-serif;letter-spacing:.04em;margin:6px 0 14px}
+.ny-detail-panel .ny-price{font-size:18px;margin:4px 0 16px}
+
+.ny-bag-row{gap:12px}
+.ny-bag-name{display:flex;flex-direction:column;gap:4px}
+.ny-bag-name small{font-size:12px;color:#6a6a60}
+.ny-qty{display:inline-flex;align-items:center;gap:2px;flex:none}
+.ny-qty button{display:grid;place-items:center;min-width:36px;height:40px;padding:0;background:none;border:0}
+.ny-qty button:disabled{opacity:.35}
+.ny-qty>span{min-width:22px;text-align:center;font-size:14px}
+.ny-bag-total{display:flex;justify-content:space-between;padding:22px 0 0;font:500 16px/1 'DM Sans',sans-serif}
+.ny-bag-panel .ny-primary{width:100%;justify-content:space-between}
+.ny-bag-panel .ny-primary:disabled{opacity:.5;cursor:not-allowed}
+
+/* Panels stay cream in both themes, so their text must not follow the dark-theme palette. */
+.ny-panel p:not(.ny-kicker),html[data-theme=dark] .ny-panel p:not(.ny-kicker){color:#4f5147}
+.ny-panel .ny-bag-name small,html[data-theme=dark] .ny-panel .ny-bag-name small{color:#6a6a60}
+.ny-panel>p+.ny-primary{margin-top:28px}
+.ny-panel p.ny-bag-error,html[data-theme=dark] .ny-panel p.ny-bag-error{color:#9b2c2c;font-size:14px;margin:0 0 12px}
